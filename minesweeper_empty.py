@@ -1,59 +1,26 @@
-"""
-Empty minesweeper template by Kylie Ying
-
-YouTube Kylie Ying: https://www.youtube.com/ycubed 
-Twitch KylieYing: https://www.twitch.tv/kylieying 
-Twitter @kylieyying: https://twitter.com/kylieyying 
-Instagram @kylieyying: https://www.instagram.com/kylieyying/ 
-Website: https://www.kylieying.com
-Github: https://www.github.com/kying18 
-Programmer Beast Mode Spotify playlist: https://open.spotify.com/playlist/4Akns5EUb3gzmlXIdsJkPs?si=qGc4ubKRRYmPHAJAIrCxVQ 
-
-Project specs, files, code all over the place? Start using Backlog for efficient management!! There is a free tier: https://cutt.ly/ehxImv5
-"""
-
 import random
 import re
 
-# Creating a board object to represent the minesweeper board
-# This is so that when we code up the game, we can just say "create a new board object"
-# and dig on that board, etc.
 class Board:
     def __init__(self, dim_size, num_bombs):
-        # keep track of these parameters because we might find them helpful later on
         self.dim_size = dim_size
         self.num_bombs = num_bombs
 
-        # get the board
         self.board = self.make_new_board()
         self.assign_values_to_board()
 
-        # initialize a set to keep track of which locations we've uncovered
-        # we will put (row,col) tuples into these sets 
         self.dug = set()
 
     def make_new_board(self):
-        # construct a new board based on the dim size and num bombs
-        # we should construct the list of lists here (or whatever representation you prefer,
-        # but since we have a 2-D board, list of lists is most natural)
+     
         return [] # change this
 
     def assign_values_to_board(self):
-        # now that we have the bombs planted, let's assign a number 0-8 for all the empty spaces, which
-        # represents how many neighboring bombs there are. we can precompute these and it'll save us some
-        # effort checking what's around the board later on :)
+
         pass
 
     def get_num_neighboring_bombs(self, row, col):
-        # let's iterate through each of the neighboring positions and sum number of bombs
-        # top left: (row-1, col-1)
-        # top middle: (row-1, col)
-        # top right: (row-1, col+1)
-        # left: (row, col-1)
-        # right: (row, col+1)
-        # bottom left: (row+1, col-1)
-        # bottom middle: (row+1, col)
-        # bottom right: (row+1, col+1)
+   
 
         # ps we need to make sure we don't go out of bounds!!
         pass
